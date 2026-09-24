@@ -22,6 +22,12 @@
 <main>
 <section id="pensum">
 <h2>Pensum</h2>
+<p>Under finner du pensumlisten og en oversikt over emnene du trenger til studiestart.</p>
+<ul>
+<li>UX Design - grunnleggende prinsipper</li>
+<li>Interaksjonsdesign og brukertesting</li>
+<li>Prototyping og designverktøy</li>
+</ul>
 <figure>
 <img
 src="bilder/pensum.jpg"
@@ -35,6 +41,7 @@ height="200">
 
 <section id="campus">
 <h2>Campus</h2>
+<p>Her finner du informasjon om campus og hvor du kan orientere deg i starten av studiet.</p>
 <a href="https://www.usn.no/campus" target="_blank">Campus USN</a>
 <figure>
 <img
@@ -56,13 +63,28 @@ width="200"
 height="200">
 <figcaption>Kontaktinformasjon for studentguiden.</figcaption>
 </figure>
+<form action="/send" method="post">
+<p>
+<label for="name">Navn</label>
+<input id="name" name="name" autocomplete="name" required>
+</p>
+<p>
+<label for="email">E-post</label>
+<input
+id="email"
+name="email"
+type="email"
+autocomplete="email"
+required>
+</p>
+<button type="submit">Send</button>
+</form>
 <p>Har du spørsmål? Kontakt oss på <a href="mailto:studentguiden@usn.no">studentguiden@usn.no</a>.</p>
 </section>
-
 </main>
 
-
 <footer>
-  <h3>  elsker du fortnite det gjør vi !</h3>
 <p>Studentguiden - WES120V</p>
 </footer>
+</body>
+</html>
