@@ -7,7 +7,8 @@
 --space-md: 1rem;
 --space-lg: 2rem;
 }
-,::before, *::after {
+
+:before, *::after {
 box-sizing: border-box;
 }
 
