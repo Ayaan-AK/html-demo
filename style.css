@@ -10,3 +10,39 @@
 ,::before, *::after {
 box-sizing: border-box;
 }
+
+body {
+margin: 0;
+color: var(--color-text);
+font-family: Arial, sans-serif;
+font-size: 1rem;
+line-height: 1.6;
+}
+h1, h2, h3 {
+line-height: 1.2;
+}
+a {
+color: var(--color-accent);
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+outline: 3px solid var(--color-accent);
+outline-offset: 3px;
+}
+
+.page {
+width: min(100% - 2rem, 70rem);
+margin-inline: auto;
+}
+.prose {
+max-width: 65ch;
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+.prose {
+overflow-wrap: anywhere;
+}
