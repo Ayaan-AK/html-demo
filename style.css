@@ -1,0 +1,12 @@
+
+:root {
+--color-text: #171a1d;
+--color-surface: #f2f3f4;
+--color-accent: #2f80ed;
+--space-sm: 0.5rem;
+--space-md: 1rem;
+--space-lg: 2rem;
+}
+,::before, *::after {
+box-sizing: border-box;
+}
