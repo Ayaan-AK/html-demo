@@ -46,3 +46,34 @@ height: auto;
 .prose {
 overflow-wrap: anywhere;
 }
+
+.page-layout {
+display: grid;
+gap: var(--space-lg);
+}
+@media (min-width: 48rem) {
+.page-layout {
+grid-template-columns: minmax(0, 2fr) minmax(14rem, 1fr);
+}
+}
+
+nav-list {
+display: flex;
+flex-wrap: wrap;
+gap: var(--space-md);
+align-items: center;
+}
+
+.button {
+transition: background-color 160ms ease,
+transform 160ms ease;
+}
+.button:hover,
+.button:focus-visible {
+transform: translateY(-2px);
+}
+@media (prefers-reduced-motion: reduce) {
+.button {
+transition: none;
+}
+}
