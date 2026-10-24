@@ -58,3 +58,10 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+console.log("JavaScript er lastet");
+
+const button = document.querySelector("#welcome");
+const greeting = document.querySelector("#greeting");
+button.addEventListener("click", () => {
+greeting.textContent = "Velkommen til Studentguiden!";
+})
